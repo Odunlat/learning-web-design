@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form classes in Bootstrap</title>
+    <link rel="stylesheet" a href="css/bootstrap.css">
+    <link rel="stylesheet" a href="css/font.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popperjs.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+  
+   <div class="container">
+       <hr><h2>Form in Bootstrap</h2><hr>
+
+       <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter name" class="form-control form-control-sm">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" class="form-control form-control-lg">
+            <small class="form-text text-muted">Your Email will not be shared with anyone</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" readonly class="form-control">
+            <!-- what is readonly used for. not able to type in password with readonly -->
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="3" class="form-control"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="file">File name</label>
+            <input type="file" id="file"  class="form-control">
+            <!-- what is filehelp? no difference shown when i removed it -->
+            <small id="fileHelp" class="form-text text-muted"> Max 3mb size</small>
+        </div>
+
+        <hr><h2>Form Check</h2><hr>
+        <fieldset>
+            <legend>What are you using this service for?</legend>
+            <div class="form-check">   
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Personal
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Commercial use
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Testing
+                </label>
+            </div>
+        </fieldset>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                Sign up for Newsletter 
+            </label>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+       </form>
+       <br>
+
+       <hr><h2>Inline form</h2><hr>
+
+       <form class="form-inline">
+           <input type="text" id="username" placeholder="Enter username" class="form-control">
+           <input type="password" id="password" placeholder="Enter password" class="form-control">
+           <div class="form-check">
+               <label class="form-check-label">
+                   <input type="checkbox" class="form-check-input ml-2">
+                   Remind me
+               </label>
+           </div>
+           <button type="submit" class="btn btn-success ml-2">Submit</button>
+       </form>
+
+       <hr><h2>Form row</h2><hr>
+
+       <form>
+           <div class="form-row">
+
+            <div class="col">
+                <input type="text" placeholder="First name" class="form-control">
+            </div>
+            <div class="col">
+                <!-- what's the use of col -->
+                <input type="text" placeholder="Last name" class="form-control">
+            </div>
+           </div>
+       </form>
+
+       <hr><h2>Form validation</h2><hr>
+
+       <div class="form-group">
+           <label for="username">Username</label>
+           <input type="text" id="username" class="form-control is-invalid">
+            <!-- what's the use of "is invalid" -->
+       </div>
+       <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password" class="form-control is-invalid">
+           
+            <div class="invalid-feedback">
+                Password not strong enough
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password2</label>
+                <input type="text" id="password" class="form-control is-invalid">
+                <div class="invalid-feedback">
+                    Password does not match
+                </div>
+            </div>
+       </div>
+
+
+   </div> 
+
+</body>
+</html>

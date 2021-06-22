@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Classes</title>
+    <link rel="stylesheet" a href="css/bootstrap.css">
+    <link rel="stylesheet" a href="css/font.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popperjs.js"></script>
+    <script src="js/bootstrap.js"></script>
+   
+</head>
+<body>
+ 
+   <div class="container">
+
+    <h3 class="fixed-top text-center bg-dark text-white">Not your regular website</h3>
+    <h1><marquee class="mt-5 border border-primary">Welcome to my practice class!!!</marquee></h1>
+    <h2><marquee behavior="alternate" direction="">It's nice to have you here.</marquee></h2>
+
+       <hr><h2>Buttons in Bootstrap</h2><hr>
+       <br><br>
+
+       <button type="button" class="btn btn-primary">Primary Button</button>
+       <button type="button" class="btn btn-secondary">Secondary Button</button>
+       <button type="button" class="btn btn-success">Success Button</button>
+       <button type="button" class="btn btn-info">Info Button</button>
+       <button type="button" class="btn btn-warning">Warning Button</button>
+       <button type="button" class="btn btn-danger">Danger Button</button>
+       <button type="button" class="btn btn-dark">Dark Button</button>
+       <button type="button" class="btn btn-light">Light Button</button>
+       <button class="btn btn-link">Link Button</button>
+
+       <br><br>
+
+       <hr><h2>Button tags in Bootstrap</h2><hr>
+
+        <a href="#" role="button" class="btn btn-success">Link</a>
+       <button type="submit" class="btn btn-primary">Button</button>
+       <input type="button" class="btn btn-danger" value="Input"/>
+        <input type="submit" class="btn btn-info" value="submit"/>
+        <input type="reset" class="btn btn-dark" value="Reset"/>
+
+        <br><br>
+
+        <button type="button" class="btn btn-outline-primary">Primary Button</button>
+       <button type="button" class="btn btn-outline-secondary">Secondary Button</button>
+       <button type="button" class="btn btn-outline-success">Success Button</button>
+       <button type="button" class="btn btn-outline-info">Info Button</button>
+       <button type="button" class="btn btn-outline-warning">Warning Button</button>
+       <button type="button" class="btn btn-outline-danger">Danger Button</button>
+       <button type="button" class="btn btn-outline-dark">Dark Button</button>
+       <button type="button" class="btn btn-outline-light">Light Button</button>
+       <br><br>
+
+       <hr><h2>Button Sizes in Bootstrap</h2><hr>
+
+                                                                        <!-- FONT AWESOME FA FA-USER NOT WORKING FOR ME -->
+       <button type="button" class="btn btn-success btn-lg"><i class="fa fa-user" aria-hidden="true"></i>Large button</button>  
+       <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+       <br><br>
+       <button type="button" class="btn btn-danger btn-block">Block level button</button>
+       <br><br><br>
+
+       <hr><h2>States in Bootstrap</h2><hr>
+
+       <button type="button" class="btn btn-success">Regular Button</button>
+       <button type="button" class="btn btn-primary active">Active Button</button>
+       <button type="button" class="btn btn-danger disabled">Disabled Button</button>
+       
+       <!-- I DIDN'T NOTICE THE IMPACT OF TOGGLE -->
+        <button type="button" class="btn btn-dark" data-toggle="button">
+            Toggle State
+        </button>
+        <br><br>
+
+        <hr><h2>Button dropdowns in Bootstrap</h2><hr>
+        <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                 My Dropdown
+            </button>
+
+             <!-- a href can also be used -->
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Home</a>
+                <a href="#" class="dropdown-item">Contact me</a>
+                <a href="#" class="dropdown-item">About me</a>
+            </div>
+        
+        </div>
+        <br>
+
+        <!-- not part -->
+        <button class="btn btn-link">Home</button>
+        <button class="btn btn-link">Contact me</button>
+        <button class="btn btn-link">About me</button>
+        <br>
+        
+        <br><br>
+
+        <hr><h2>Split dropdowns in Bootstrap</h2><hr>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">My Button</button>
+                <button type="button" class="btn btn-primary data dropdown-toggle" data-toggle="dropdown">
+                    <span>Toggle Dropdown</span> 
+                </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Home</a>
+                <a href="#" class="dropdown-item">Contact me</a>
+                <a href="#" class="dropdown-item">About me</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Privacy policy</a>
+            </div>
+        </div>
+        
+        
+        <br><br>
+        <!-- not part -->
+        <button class="btn btn-link">Home</button>
+        <button class="btn btn-link">Contact me</button>
+        <button class="btn btn-link">About me</button>
+        <br>
+        <button class="btn btn-link">Privacy policy</button>
+
+        <br><br>
+
+        <div>
+            <hr><h2>Button groups in Bootstrap</h2><hr>
+            <button type="button" class="btn btn-success">Left Button</button>
+            <button type="button" class="btn btn-success">Middle Button</button>
+            <button type="button" class="btn btn-success">Right Button</button>
+        </div>
+ 
+            <br><br>
+
+            <hr><h2>Button toolbar in Bootstrap</h2><hr>
+
+            <div class="btn-toolbar">
+
+                <div class="btn-group mr-2">
+                    <button type="button" class="btn btn-primary">01</button>
+                    <button type="button" class="btn btn-primary">02</button>
+                    <button type="button" class="btn btn-primary">03</button>
+                    <button type="button" class="btn btn-primary">04</button>
+                </div>
+
+                <div class="btn-group mr-2">
+                    <button type="button" class="btn btn-primary">05</button>
+                    <button type="button" class="btn btn-primary">06</button>
+                    <button type="button" class="btn btn-primary">07</button>
+                </div>
+
+                <div class="btn-group mr-2">
+                 <button type="button"class="btn btn-primary">08</button>
+                </div>
+            </div>
+            <br><br>
+            
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Left Button</button>
+                <button type="button" class="btn btn-primary">Middle Button</button>
+                <button type="button" class="btn btn-primary">Right Button</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div> 
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <h3>Let's learn Javascript</h3>
+       First Number <input type="text"  id="num1"><hr/>
+     Second Number   <input type="text"  id="num2"> <hr>
+        <input type="submit" value="+" onclick="calc_sum()">
+        <input type="submit" value="-" onclick="calc_minus()">
+        <input type="submit" value="*" onclick="calc_times()">
+        <input type="submit" value="/" onclick="calc_divide()">
+
+
+    </div>
+    <script>
+       /*alert("Hello")
+      var name ="Aisha";
+      alert(name)
+      var x = 4
+      var y = 8
+      alert(x+y)
+      */
+
+      function aisha(){
+          alert("Hi, my name is Aisha")
+      }
+      var x = document.getElementById('num1').value
+      var y = document.getElementById('num2').value
+     x = parseInt(x)
+     y = parseInt(y)
+      function calc_sum(){
+      
+         alert(x+y)
+      }
+
+      function calc_minus(){
+       
+       alert(x-y)
+    }
+
+    function calc_times(){
+      
+       alert(x*y)
+
+    }
+
+    function calc_divide(){
+       
+       alert(x/y)
+    }
+
+
+    </script>
+</body>
+</html>

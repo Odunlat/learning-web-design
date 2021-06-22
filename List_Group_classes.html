@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group Classes in Bootstrap</title>
+    <link rel="stylesheet" a href="css/bootstrap.css">
+    <link rel="stylesheet" a href="css/font.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popperjs.js"></script>
+    
+   
+</head>
+<body>
+ 
+   <div class="container">
+
+    <hr><h2>List Group in Bootstrap</h2><hr>
+
+    <ul class="list-group mb-5">
+        <li class="list-group-item">My list item one</li>
+        <li class="list-group-item">My list item two</li>
+        <li class="list-group-item">My list item three</li>
+        <li class="list-group-item">My list item four</li>
+        <li class="list-group-item">My list item five</li>
+    </ul>
+
+   <hr><h2>List group with links in Bootstrap</h2>
+
+    <ul class="list-group">
+        <a href="#" class="list-group-item" class="list-group-item-active">My list item one</a>
+        <a href="#" class="list-group-item" class="list-group-item-active">My list item two</a>
+        <a href="#" class="list-group-item" class="list-group-item-active">My list item three</a>
+        <a href="#" class="list-group-item" class="list-group-item-active">My list item four</a>
+        <a href="#" class="list-group-item" class="list-group-item-active">My list item five</a>
+    </ul>
+
+    <hr><h2>Contextual classes in Bootstrap</h2><hr>
+
+    <ul  class="list-group">
+        <li class="list-group-item" class="list-group-item-active">Regular list item</li>
+        <!-- colours not working -->
+        <li class="list-group-item" class="list-group-item-primary">Primary list item</li>
+        <li class="list-group-item" class="list-group-item-secondary">Secondary list item</li>
+        <li class="list-group-item" class="list-group-item-success">Success list item</li>
+        <li class="list-group-item" class="list-group-item-info">Info list item</li>
+        <li class="list-group-item" class="list-group-item-warning">Warning list item</li>
+        <li class="list-group-item" class="list-group-item-danger">Danger list item</li>
+        <li class="list-group-item" class="list-group-item-light">Light list item</li>
+        <li class="list-group-item" class="list-group-item-dark">Dark list item</li>
+    </ul>
+
+    <hr><h2>Javascript Behaviour</h2><hr>
+
+    <div class="row mb-5">
+
+        <div class="col-4">
+            <!-- how do we know when to use role -->
+            <div class="list-group" role="tablist"> 
+                <!-- mine is not showing blue colour on cursor 02:18:04-->
+            <a href="#Home" class="list-group-item" class="list-group-item-action active" data-toggle="list">Home</a>
+            <a href="#About" class="list-group-item" class="list-group-item-action" data-toggle="list">About me</a>
+
+            </div>
+        </div>
+        
+        <div class="col-8">
+            <!-- why use fade? and isn't it supposed to only show when i click on home -->
+            <div class="tab-pane fade show" id="Home" role="tab-panel">
+                Home page data....
+            </div>
+            <div class="tab-pane fade show" id="About" role="tab-panel">
+                About me page data....
+            </div>
+
+        </div>
+    </div>
+
+
+    <hr><h2>Badges</h2><hr>
+
+    <ul class="list-group">
+        <li class="list-group-item">My list item one</li>
+        <li class="list-group-item">My list item two</li>
+        <li class="list-group-item d-flex justify-content-between align-item-center">My list item three<span class="badge badge-primary">100<span></li>
+        <li class="list-group-item">My list item four</li>
+        <li class="list-group-item">My list item five</li>
+    </ul>
+
+    <hr><h2>Breadcrumb</h2><hr>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Home</li>
+</ol>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Contact</a></li>
+    <li class="breadcrumb-item">Users</li>
+</ol>
+
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item"><a href="#">Home</a></li>
+     <li class="breadcrumb-item"><a href="#">Contact me</a></li>
+     <li class="breadcrumb-item"><a href="#">About me</a></li>   
+    </ol>
+
+
+
+   </div> 
+
+</body>
+</html>
